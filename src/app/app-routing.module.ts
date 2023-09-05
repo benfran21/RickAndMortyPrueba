@@ -3,12 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { BodyComponent } from './body/body.component';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { EpisodiosComponent } from './episodios/episodios.component';
+import { logginComponent } from './loggin/loggin.component';
 
 const routes: Routes = [
-  {path: '', component: BodyComponent},
-  {path: 'body', component: BodyComponent},
-  {path: 'body/personajes', component: PersonajesComponent},
-  {path: 'body/episodios', component: EpisodiosComponent},
+  {path: '', component: logginComponent},
+  {path: 'personajes', component: PersonajesComponent},
+  {path: 'episodios', component: EpisodiosComponent},
+  {path: 'loggin', component: logginComponent},
 ]
 
 @NgModule({
