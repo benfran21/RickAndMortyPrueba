@@ -5,10 +5,16 @@
     <div class="contenedor fondo">
         <form action="">
             <div class="contenedor">
-                <input type="email" name="email" placeholder="Instroduzca su email">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Introduzca su email</mat-label>
+                    <input matInput placeholder="Email" type="email" name="email">
+                </mat-form-field>
             </div>
             <div class="contenedor">
-                <input type="password" name="password" placeholder="Introduzca su contraseña">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Introduzca su contraseña</mat-label>
+                    <input matInput placeholder="Contraseña" type="password" name="password">
+                </mat-form-field>
             </div>
             <div class="contenedor">
                 <button type="submit" mat-button>Ingresar</button>

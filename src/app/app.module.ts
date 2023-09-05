@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { EpisodiosComponent } from './episodios/episodios.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { EpisodiosComponent } from './episodios/episodios.component';
     HttpClientModule,
     MatGridListModule,
     MatPaginatorModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
