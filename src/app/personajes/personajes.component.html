@@ -1,0 +1,43 @@
+<div class="titulo">
+  <h1>Personajes</h1>
+</div>
+<mat-grid-list cols="3" rowHeight="2.5:2.8">
+  <mat-grid-tile *ngFor="let item of data">
+    <ul>
+      <img class="imgPersonajes" src="{{item.image}}">
+      <li>
+        <strong>Nombre: </strong>
+        {{item.name}}
+      </li>
+      <li>
+        <strong>Origen: </strong>
+        {{item.origin.name}}
+      </li>
+      <li>
+        <strong>Estado: </strong>
+        {{item.status}}
+      </li>
+      <li>
+        <strong>Especie: </strong>
+        {{item.species}}
+      </li>
+      <li>
+        <strong>Genero: </strong>
+        {{item.gender}}
+      </li>
+      <li>
+        <strong>Ubicacion: </strong>
+        {{item.location.name}}
+      </li>
+      <li>
+        <strong>Tipo: </strong>
+        {{item.type}}
+      </li>
+    </ul>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-paginator [length]="length"
+              [pageSize]="20"
+              [pageSizeOptions]="[20, 50, 100]"
+              aria-label="Select page">
+</mat-paginator>
