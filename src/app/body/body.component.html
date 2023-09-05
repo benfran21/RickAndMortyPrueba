@@ -1,0 +1,50 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav class="sidenavstyle">
+        <mat-list>
+            <mat-list-item>
+                <a href="">Loggin</a>
+            </mat-list-item>
+            <mat-list-item>
+                <a href="http://localhost:4200/body/personajes">Personajes</a>
+            </mat-list-item>
+            <mat-list-item>
+                <a href="http://localhost:4200/body/episodios">Episodios</a>
+            </mat-list-item>
+            <mat-list-item>
+                <a href="">Acerda de Nosotros</a>
+            </mat-list-item>
+        </mat-list>
+        <div class="sideFooter">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                <mat-icon>facebook</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                <mat-icon>explore</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                <mat-icon>help</mat-icon>
+            </button>
+            <p>© Copyright 2023</p>
+            <p>Rick And Morty Test</p>
+        </div>
+    </mat-sidenav>
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+            (click)="sidenav.open()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <img src="./assets/logoRickTransparente.png">
+        <span>Rick And Morty Test</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+        </button>
+    </mat-toolbar>
+    <div class="bodyFooter">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+</mat-sidenav-container>
