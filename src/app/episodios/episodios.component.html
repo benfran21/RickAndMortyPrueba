@@ -1,0 +1,34 @@
+<div class="titulo">
+    <h1>Episodios</h1>
+  </div>
+  <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let item of data">
+      <ul>
+        <li>
+          <strong>Nombre: </strong>
+          {{item.name}}
+        </li>
+        <li>
+          <strong>Fecha de creacion: </strong>
+          {{item.created}}
+        </li>
+        <li>
+          <strong>Fecha de emision: </strong>
+          {{item.air_date}}
+        </li>
+        <li>
+          <strong>Codigo del episodio: </strong>
+          {{item.episode}}
+        </li>
+        <li>
+          <strong>URL:</strong>
+          <a href="{{item.url}}">{{item.url}}</a>
+        </li>
+      </ul>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-paginator [length]="length"
+                [pageSize]="20"
+                [pageSizeOptions]="[20, 50, 100]"
+                aria-label="Select page">
+  </mat-paginator>
