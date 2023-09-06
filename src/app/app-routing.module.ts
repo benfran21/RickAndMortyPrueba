@@ -6,7 +6,7 @@ import { EpisodiosComponent } from './episodios/episodios.component';
 import { logginComponent } from './loggin/loggin.component';
 
 const routes: Routes = [
-  {path: '', component: logginComponent},
+  {path: '', redirectTo:'/loggin', pathMatch:'full'},
   {path: 'personajes', component: PersonajesComponent},
   {path: 'episodios', component: EpisodiosComponent},
   {path: 'loggin', component: logginComponent},
