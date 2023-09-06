@@ -1,18 +1,26 @@
 <mat-sidenav-container fullscreen>
     <mat-sidenav #sidenav class="sidenavstyle">
         <mat-list>
-            <mat-list-item>
-                <a href="http://localhost:4200/loggin">Loggin</a>
-            </mat-list-item>
-            <mat-list-item>
-                <a href="http://localhost:4200/personajes">Personajes</a>
-            </mat-list-item>
-            <mat-list-item>
-                <a href="http://localhost:4200/episodios">Episodios</a>
-            </mat-list-item>
-            <mat-list-item>
-                <a href="http://localhost:4200/nosotros">Acerca de Nosotros</a>
-            </mat-list-item>
+            <a href="http://localhost:4200/loggin">
+                <mat-list-item>
+                    <a>Loggin</a>
+                </mat-list-item>
+            </a>
+            <a href="http://localhost:4200/personajes">
+                <mat-list-item>
+                    <a>Personajes</a>
+                </mat-list-item>
+            </a>
+            <a href="http://localhost:4200/episodios">
+                <mat-list-item>
+                    <a>Episodios</a>
+                </mat-list-item>
+            </a>
+            <a href="http://localhost:4200/nosotros">
+                <mat-list-item>
+                    <a>Acerca de Nosotros</a>
+                </mat-list-item>
+            </a>
         </mat-list>
         <div class="sideFooter">
             <button mat-icon-button>
@@ -29,8 +37,7 @@
         </div>
     </mat-sidenav>
     <mat-toolbar color="primary">
-        <button mat-icon-button
-            (click)="sidenav.open()">
+        <button mat-icon-button (click)="sidenav.open()">
             <mat-icon>menu</mat-icon>
         </button>
         <img src="./assets/logoRickTransparente.png">
