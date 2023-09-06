@@ -18,6 +18,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { EpisodiosComponent } from './episodios/episodios.component';
 import { MatInputModule } from '@angular/material/input';
+import { AcercaNosotrosComponent } from './acerca-nosotros/acerca-nosotros.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatInputModule } from '@angular/material/input';
     logginComponent,
     PersonajesComponent,
     BodyComponent,
-    EpisodiosComponent
+    EpisodiosComponent,
+    AcercaNosotrosComponent
   ],
   imports: [
     BrowserModule,
